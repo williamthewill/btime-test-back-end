@@ -1,6 +1,22 @@
 # Btime Test Front-End
 
 This project was developed based on test instructions.
+It was user GraphQL api to share data with front-end
+Front-End can user one schema to make get_all, search and filter is the `getPaginated` schema
+
+![alt text](image.png)
+
+To able the search mode on just user the params about search `isSearch: true` and `substring: <String>`
+
+![alt text](image-1.png)
+
+To able the filter mode on just user the params about filter `isFilter: true` and `filter: <String>`
+
+![alt text](image-2.png)
+
+To make pagination in all cases just add params of pagination
+
+![alt text](image-3.png)
 
 ## Available Scripts
 

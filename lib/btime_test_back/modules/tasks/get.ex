@@ -26,6 +26,5 @@ defmodule BtimeTestBack.Modules.Tasks.Get do
       nil -> {:error, "Item not found"}
       item -> {:ok, item}
     end
-    |> IO.inspect()
   end
 end
