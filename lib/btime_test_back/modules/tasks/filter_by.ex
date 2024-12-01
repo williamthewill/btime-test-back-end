@@ -1,5 +1,5 @@
 defmodule BtimeTestBack.Modules.Tasks.FilterBy do
-  alias BtimeTestBack.{Repo, Tasks}
+  alias BtimeTestBack.{Tasks}
 
   import Ecto.Query
 

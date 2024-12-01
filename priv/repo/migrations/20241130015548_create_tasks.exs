@@ -7,7 +7,7 @@ defmodule BtimeTestBack.Repo.Migrations.CreateTasks do
       add :execution_date, :naive_datetime
       add :execution_place, :string
       add :priority, :string
-      add :description, :string
+      add :description, :text
       add :files, :string
       add :status, :string
 

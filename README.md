@@ -4,12 +4,19 @@ This project was developed based on test instructions.
 
 ## Available Scripts
 
-  * Run `mix setup` to install and setup dependencies locally
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+### `mix setup`
+  Run to install and setup dependencies locally
+
+### `mix phx.server`
+  Start Phoenix endpoint or inside IEx with `iex -S mix phx.server`
 
 Now you can visit [`localhost:4000/api/graphiql`](http://localhost:4000/api/graphiql) from your browser to access graphql playground.
 
 Or [`localhost:4000/api/graphql`](http://localhost:4000/api/graphql) from your browser to access graphql api.
+
+### `mix test`
+Launches the test runner in the interactive watch mode.
+> Note: You must have postgres started locally, because `mix test` create and generate an database
 
 ## Run by Docker
 
@@ -21,9 +28,8 @@ In the project directory, you can run:
 
 **Format URL_DATABASE(postgres://{user}:{password}@{hostname}:{port}/{database-name})**
 
-### Note By Database when you run project by Docker
-You need create and migrate database before runing docker, lets do it:
-
-  * Run `mix setup` to install and setup dependencies locally. 
+> ### Note: To Database when you run project by Docker
+> You need create and migrate database before runing docker, lets do it:
+> > Run `mix setup` to install and setup dependencies locally. 
   After create and migrate database locally you can start projet by Docker
 
