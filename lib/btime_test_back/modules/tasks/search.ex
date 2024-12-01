@@ -6,7 +6,6 @@ defmodule BtimeTestBack.Modules.Tasks.Search do
   def call(substring) do
     like_sub = "%#{substring}%"
 
-    # query =
     from(t in Tasks,
       where: ilike(t.name, ^like_sub) or ilike(t.description, ^like_sub),
       select: %{

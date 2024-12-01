@@ -49,7 +49,10 @@ defmodule BtimeTestBack.MixProject do
       {:absinthe_phoenix, "~> 2.0.0"},
       {:absinthe_relay, "~> 1.5.0"},
       {:plug_cowboy, "~> 2.0"},
-      {:corsica, "~> 2.0"}
+      {:corsica, "~> 2.0"},
+      {:ex_machina, "~> 2.8.0", only: :test},
+      {:mox, "~> 0.5.2", only: [:test], runtime: false},
+      {:floki, ">= 0.27.0", only: :test}
     ]
   end
 
