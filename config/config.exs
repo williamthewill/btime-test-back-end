@@ -20,7 +20,8 @@ config :btime_test_back, BtimeTestBackWeb.Endpoint,
     layout: false
   ],
   pubsub_server: BtimeTestBack.PubSub,
-  live_view: [signing_salt: "U1i4bXhO"]
+  live_view: [signing_salt: "U1i4bXhO"],
+  secret_key_base: "MelcfSlPwq4doMv2OKRBR9xVNW519TiQaihy8OKhz0e++7+pnWbXME2NrHJZe+4f"
 
 # Configures the mailer
 #
