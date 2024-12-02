@@ -1,8 +1,8 @@
 # Btime Test Front-End
 
 This project was developed based on test instructions.
-It was user GraphQL api to share data with front-end
-Front-End can user one schema to make get_all, search and filter is the `getPaginated` schema
+It was used GraphQL api to share data with front-end
+Front-End can use one schema to make get_all, search and filter is the `getPaginated` schema
 
 ![alt text](image.png)
 
