@@ -54,7 +54,7 @@ In the project directory, you can run:
 To acelerate processes form testing api project you can access by hosting 
 
 >To access Playground
-[`localhost:4000/api/graphql`](https://beautiful-little-unau.gigalixirapp.com/api/graphiql)
+[`https://beautiful-little-unau.gigalixirapp.com/api/graphql`](https://beautiful-little-unau.gigalixirapp.com/api/graphiql)
 >
 >To access API
-[`localhost:4000/api/graphql`](https://beautiful-little-unau.gigalixirapp.com/api/graphql)
+[`https://beautiful-little-unau.gigalixirapp.com/api/graphql`](https://beautiful-little-unau.gigalixirapp.com/api/graphql)
