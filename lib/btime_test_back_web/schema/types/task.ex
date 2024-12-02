@@ -20,7 +20,7 @@ defmodule BtimeTestBackWeb.Schema.Types.Task do
     field :execution_place, non_null(:string)
     field :priority, non_null(:string)
     field :description, non_null(:string)
-    field :files, :id
+    field :files, :string
     field :status, non_null(:string)
   end
 end

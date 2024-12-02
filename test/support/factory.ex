@@ -3,13 +3,17 @@ defmodule BtimeTestBack.Factory do
 
   def tasks_factory do
     %BtimeTestBack.Tasks{
-      name: "Task 10",
-      priority: :alta,
-      description: "test description",
+      name: "Task 1",
+      priority: :baixa,
+      description: "Lorem Ipsum is ",
       execution_date: NaiveDateTime.utc_now() |> NaiveDateTime.truncate(:second),
-      execution_place: "Nova Iguaçu",
-      files: "banana",
-      status: :executed
+      execution_place: "Maringá",
+      files: "{
+        img: [
+          \"https://raw.githubusercontent.com/williamthewill/btime-test-back-end/refs/heads/master/image-1.png\"
+        ]
+      }",
+      status: :scheduled
     }
   end
 end

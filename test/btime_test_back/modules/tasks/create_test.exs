@@ -14,11 +14,13 @@ defmodule BtimeTestBack.Modules.Tasks.CreateTest do
         description: @description,
         execution_date: NaiveDateTime.utc_now() |> NaiveDateTime.truncate(:second),
         execution_place: "Nova Iguaçu",
-        files: "banana",
+        files:
+          "{img:[\"https://raw.githubusercontent.com/williamthewill/btime-test-back-end/refs/heads/master/image-1.png\"]}",
         status: :executed
       }
 
       changeset = task |> Tasks.changeset()
+      BtimeTestBack.Modules.Tasks.Create.call(task)
 
       assert changeset.valid?
     end
