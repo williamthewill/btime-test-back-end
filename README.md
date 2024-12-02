@@ -51,7 +51,7 @@ In the project directory, you can run:
 
 ## Access by hosting
 
-To acelerate processes form testing api project you can access by hosting 
+To acelerate processes for testing api project you can access by hosting 
 
 >To access Playground
 [`https://beautiful-little-unau.gigalixirapp.com/api/graphql`](https://beautiful-little-unau.gigalixirapp.com/api/graphiql)
