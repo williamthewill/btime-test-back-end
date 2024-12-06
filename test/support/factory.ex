@@ -8,11 +8,6 @@ defmodule BtimeTestBack.Factory do
       description: "Lorem Ipsum is ",
       execution_date: NaiveDateTime.utc_now() |> NaiveDateTime.truncate(:second),
       execution_place: "Maringá",
-      files: "{
-        img: [
-          \"https://raw.githubusercontent.com/williamthewill/btime-test-back-end/refs/heads/master/image-1.png\"
-        ]
-      }",
       status: :scheduled
     }
   end

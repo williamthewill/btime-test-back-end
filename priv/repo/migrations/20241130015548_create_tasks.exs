@@ -8,8 +8,8 @@ defmodule BtimeTestBack.Repo.Migrations.CreateTasks do
       add :execution_place, :string
       add :priority, :string
       add :description, :text
-      add :files, :text
       add :status, :string
+      add :files, :jsonb
 
       timestamps(type: :utc_datetime)
     end

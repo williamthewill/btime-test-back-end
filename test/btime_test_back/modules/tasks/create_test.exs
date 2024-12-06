@@ -9,18 +9,21 @@ defmodule BtimeTestBack.Modules.Tasks.CreateTest do
   describe "changeset/2" do
     test "when params is valid, returns a valid changeset" do
       task = %{
-        name: "Task 10",
-        priority: :alta,
-        description: @description,
+        name: "Task 1",
+        priority: :baixa,
+        description: "@description",
         execution_date: NaiveDateTime.utc_now() |> NaiveDateTime.truncate(:second),
-        execution_place: "Nova Iguaçu",
-        files:
-          "{img:[\"https://raw.githubusercontent.com/williamthewill/btime-test-back-end/refs/heads/master/image-1.png\"]}",
-        status: :executed
+        execution_place: "Maringá",
+        files: %{
+          img: [
+            "https://raw.githubusercontent.com/williamthewill/btime-test-back-end/refs/heads/master/image-1.png"
+          ]
+        },
+        status: :scheduled
       }
 
-      changeset = task |> Tasks.changeset()
-      BtimeTestBack.Modules.Tasks.Create.call(task)
+      changeset = BtimeTestBack.Tasks.changeset(task)
+      BtimeTestBack.Modules.Tasks.Create.call(changeset)
 
       assert changeset.valid?
     end

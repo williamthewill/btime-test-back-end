@@ -8,7 +8,7 @@ defmodule BtimeTestBack.Modules.Tasks.GetPaginated do
       ) do
     BtimeTestBack.Modules.Tasks.Search.call(substring)
     |> order_by(desc: :inserted_at)
-    |> Absinthe.Relay.Connection.from_query(&Repo.all/1, pagination_args)
+    |> Absinthe.Relay.Connection.from_query(fn q -> Repo.all(q) end, pagination_args)
   end
 
   def call(

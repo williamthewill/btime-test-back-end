@@ -1,6 +1,27 @@
 import Config
 
+# {
+#   "app_name": "beautiful-little-unau",
+#   "database": "1cb703c8-65ef-48f5-930c-d126c898fa00",
+#   "host": "postgres-free-tier-v2020.gigalixir.com",
+#   "id": "1cb703c8-65ef-48f5-930c-d126c898fa00",
+#   "password": "pw-14a06933-2e88-4b37-86c8-130b4eae83e6",
+#   "port": 5432,
+#   "state": "AVAILABLE",
+#   "tier": "FREE",
+#   "url": "postgresql://1cb703c8-65ef-48f5-930c-d126c898fa00-user:pw-14a06933-2e88-4b37-86c8-130b4eae83e6@postgres-free-tier-v2020.gigalixir.com:5432/1cb703c8-65ef-48f5-930c-d126c898fa00",
+#   "username": "1cb703c8-65ef-48f5-930c-d126c898fa00-user"
+# }
 # Configure your database
+# config :btime_test_back, BtimeTestBack.Repo,
+#   username: "1cb703c8-65ef-48f5-930c-d126c898fa00-user",
+#   password: "pw-14a06933-2e88-4b37-86c8-130b4eae83e6",
+#   hostname: "postgres-free-tier-v2020.gigalixir.com",
+#   database: "1cb703c8-65ef-48f5-930c-d126c898fa00",
+#   stacktrace: true,
+#   show_sensitive_data_on_connection_error: true,
+#   pool_size: 10
+
 config :btime_test_back, BtimeTestBack.Repo,
   username: "postgres",
   password: "postgres",

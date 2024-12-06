@@ -13,6 +13,10 @@ defmodule BtimeTestBackWeb.Schema.Types.Task do
   #   field :status, non_null(:string)
   # end
 
+  node object(:files) do
+    field :img, list_of(:string)
+  end
+
   node object(:task) do
     field :task_id, non_null(:id)
     field :name, non_null(:string)
@@ -20,7 +24,7 @@ defmodule BtimeTestBackWeb.Schema.Types.Task do
     field :execution_place, non_null(:string)
     field :priority, non_null(:string)
     field :description, non_null(:string)
-    field :files, :string
+    field :files, :files
     field :status, non_null(:string)
   end
 end
