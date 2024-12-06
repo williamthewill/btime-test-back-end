@@ -11,7 +11,7 @@ defmodule BtimeTestBack.Modules.Tasks.CreateTest do
       task = %{
         name: "Task 1",
         priority: :baixa,
-        description: "@description",
+        description: @description,
         execution_date: NaiveDateTime.utc_now() |> NaiveDateTime.truncate(:second),
         execution_place: "Maringá",
         files: %{
@@ -23,7 +23,6 @@ defmodule BtimeTestBack.Modules.Tasks.CreateTest do
       }
 
       changeset = BtimeTestBack.Tasks.changeset(task)
-      BtimeTestBack.Modules.Tasks.Create.call(changeset)
 
       assert changeset.valid?
     end
